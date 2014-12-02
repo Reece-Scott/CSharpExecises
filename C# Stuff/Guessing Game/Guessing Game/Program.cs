@@ -11,25 +11,17 @@ namespace Guessing_Game
         static void Main(string[] args)
         {
             Random random = new Random();
-            int numGuess = random.Next(1, 50);
-            Console.WriteLine("I am thinking of a number between 1 and 50, have a guess!");
-            int userGuess = Int32.Parse(Console.ReadLine());
+            int randomNumber = random.Next(1, 5);
+            Console.WriteLine("I am thinking of a number between 1 and 5, have a guess!");
+            int playerGuess = Int32.Parse(Console.ReadLine());
 
-            if (userGuess > numGuess)
+            if (playerGuess == randomNumber)
             {
-                Console.WriteLine("No, the number is smaller than that");
+                Console.WriteLine("Correct! Well Done");
                 Console.ReadKey();
             }
-            else if (userGuess < numGuess)
-            {
-                Console.WriteLine("No, the number is larger than that");
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("Correct! Well done");
-                Console.ReadKey();
-            }
+            Console.ReadKey();
+
         }
     }
 }

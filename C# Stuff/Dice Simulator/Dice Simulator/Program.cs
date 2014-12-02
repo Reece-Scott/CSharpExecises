@@ -10,11 +10,17 @@ namespace Dice_Simulator
     {
         static void Main(string[] args)
         {
-            Random dieroll = new Random();
+            for (int dieThrows = 1; dieThrows <= 50; dieThrows++)
+            {
+                Random diceNumber = new Random();
+                int dieRoll = diceNumber.Next(1, 7);
 
-            int die = dieroll.Next(1,7);
-            Console.ReadKey();
-            Console.WriteLine("You rolled a {0}", die);
+                 Console.WriteLine("You rolled a {0}", dieRoll);
+                 Console.WriteLine();
+                 Console.WriteLine("Roll Again");
+                 Console.ReadKey();
+            }
+               
         }
             
         }

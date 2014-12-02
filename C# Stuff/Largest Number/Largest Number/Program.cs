@@ -13,20 +13,20 @@ namespace Largest_Number
             Console.WriteLine("Hello, welcom to the largest number program");
             Console.WriteLine();
             Console.Write("Please enter the first number: ");
-            int num1 = Int32.Parse(Console.ReadLine());
+            int firstNumber = Int32.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.Write("Please enter the second number: ");
-            int num2 = Int32.Parse(Console.ReadLine());
+            int secondNumber = Int32.Parse(Console.ReadLine());
 
-            if (num1 > num2)
+            if (firstNumber > secondNumber)
             {
                 Console.WriteLine();
-                Console.WriteLine("{0} is larger than {1}", num1, num2);
+                Console.WriteLine("{0} is the largest number", firstNumber, secondNumber);
             }
             else
             {
                 Console.WriteLine();
-                Console.WriteLine("{0} is larger than {1}", num2, num1);
+                Console.WriteLine("{0} is the largest number", secondNumber, firstNumber);
             }
             Console.ReadKey();
         }

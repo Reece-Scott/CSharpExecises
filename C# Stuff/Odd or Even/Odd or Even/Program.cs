@@ -12,9 +12,8 @@ namespace Odd_or_Even
         {
             Console.WriteLine("Hello, welcome to the Odd Or Even Program");
             Console.WriteLine();
-            int number;
             Console.Write("Please enter a number: ");
-            number = int.Parse(Console.ReadLine());
+            int number = int.Parse(Console.ReadLine());
             if (number % 2 == 0)
             {
                 Console.WriteLine();
@@ -22,7 +21,6 @@ namespace Odd_or_Even
             }
             else
             {
-                Console.WriteLine();
                 Console.Write("{0} is a odd number", number);
             }
             Console.ReadKey();
