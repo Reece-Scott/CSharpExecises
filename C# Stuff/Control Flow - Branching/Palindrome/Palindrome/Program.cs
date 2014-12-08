@@ -15,7 +15,7 @@ namespace Palindrome
             Console.WriteLine();
             Console.WriteLine("Please enter your number");
             int userinputNumber = Convert.ToInt32(Console.ReadLine());
-            int temp = userinputNumber;
+            int originalNumber = userinputNumber;
             int sum = 0;
             while (Convert.ToBoolean(userinputNumber))
             {
@@ -23,7 +23,7 @@ namespace Palindrome
                 userinputNumber = userinputNumber / 10;
                 sum = sum * 10 + overallRemainder;
             }
-            if (temp == sum)
+            if (originalNumber == sum)
             {
                 Console.WriteLine("The Number Is A Palindrome");
             }
