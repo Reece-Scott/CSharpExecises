@@ -12,14 +12,13 @@ namespace Isosceles_Triangle
             {
                 Console.WriteLine("Welcome to the sideways triangle program");
                 Console.WriteLine();
-                Console.WriteLine("Press enter to draw a triangle");
-                Console.ReadKey();
+                Console.WriteLine("How large is the triangle?");
+                int triangleSize = int.Parse(Console.ReadLine());
 
-                int i;
-                int k;
-                for (i = 0; i < 8; i++)
+                
+                for (int i = 0; i < triangleSize; i++)
                 {
-                    for (k = 0; k < i; k++)
+                    for (int k = 0; k < i; k++)
                         Console.Write("*");
                     Console.WriteLine();
                 }
