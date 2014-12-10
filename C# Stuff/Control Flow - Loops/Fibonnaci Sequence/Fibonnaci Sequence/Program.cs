@@ -18,7 +18,7 @@ namespace Fibonnaci_Sequence
             while (finNumber1 < 100)
             {
                 sumNumber = finNumber1 + finNumber2;
-                finNumber1 = finNumber2;
+                finNumber1 = finNumber2;  //Makes finNumber1 the same value of finNumber2, so making finNumber1 the previous number constantly.
                 finNumber2 = sumNumber;
                 Console.WriteLine(finNumber2);
             }
