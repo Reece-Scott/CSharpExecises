@@ -11,9 +11,9 @@ namespace Right_Side_Up_Triangle
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the triangle program");
-            Console.ReadKey();
-
-            int triangleSize = 6;
+            Console.WriteLine();
+            Console.WriteLine("How big would you like the triangle?");
+            int triangleSize = int.Parse(Console.ReadLine());
 
             for(int i = 1; i <= triangleSize; i++)
             {
