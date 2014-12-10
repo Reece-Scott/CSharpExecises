@@ -21,11 +21,11 @@ namespace MinMaxNumbers
 
                if (userNumber > currentLargestNumber)
                 {
-            currentLargestNumber = userNumber;      //currentLArgestNumber begins at 0, so first number user inputs will then be classed as the largest.
-                }                                   //This loops 10 times to find the largest number.
+            currentLargestNumber = userNumber;
+                }                                  
 
 
-               if (userNumber < currentSmallestNumber)  //This does the same as the largest number calculation, but in reverse.
+               if (userNumber < currentSmallestNumber) 
                {
                    currentSmallestNumber = userNumber;
                }
