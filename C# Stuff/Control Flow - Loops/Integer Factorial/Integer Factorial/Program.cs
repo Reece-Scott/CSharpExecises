@@ -16,7 +16,7 @@ namespace Integer_Factorial
             int inputNumber = int.Parse(Console.ReadLine());
             int factorialNumber = inputNumber;
 
-            for (i = inputNumber - 1; i >= 1; i--)       //i equals inputNumber -1, until the the loop reaches 1
+            for (i = inputNumber - 1; i >= 1; i--)
             {
                 factorialNumber = factorialNumber * i;
             }
