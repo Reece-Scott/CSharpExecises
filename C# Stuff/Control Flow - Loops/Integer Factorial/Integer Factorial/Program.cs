@@ -16,14 +16,12 @@ namespace Integer_Factorial
             int inputNumber = int.Parse(Console.ReadLine());
             int factorialNumber = inputNumber;
 
-            for (i = inputNumber - 1; i >= 1; i--)
+            for (int i = inputNumber - 1; i >= 1; i--)
             {
                 factorialNumber = factorialNumber * i;
             }
             Console.WriteLine("{0}", factorialNumber);
             Console.ReadKey();
         }
-
-        public static int i { get; set; }
     }
 }
