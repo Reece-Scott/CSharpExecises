@@ -11,29 +11,29 @@ namespace Sideways_Triangle
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the sideways triangle program");
-                Console.WriteLine();
-                Console.WriteLine("Press enter to draw a triangle");
+            Console.WriteLine();
+            Console.WriteLine("How large would you like the triangle?");
+            int triangleSize = int.Parse(Console.ReadLine());
+
+            int i;
+            int k;
+            int j;
+            int foo = 0;
+
+            for (i = 0; i <= triangleSize; i++)
+            {
+                for (k = 0; k < i; k++)
+                    Console.Write("*");
+                    Console.WriteLine();
+            }
+            for (i = triangleSize; i >= 0; i-- )
+            {
+
+                for (j = 0; j < i; j++)
+                    Console.Write("*");
+                    Console.WriteLine();
+            }
                 Console.ReadKey();
-
-                int i;
-                int k;
-                int j;
-                for (i = 0; i < 8; i++)
-                {
-                    
-                    for (k = 0; k < i; k++)
-                        Console.Write("*");
-                        Console.WriteLine();
-
-                        for (j = i; j > k; i--)
-                            Console.Write("*");
-                        Console.WriteLine();
-                }
-
-                Console.ReadKey();
-
-
-            
         }
     }
 }
