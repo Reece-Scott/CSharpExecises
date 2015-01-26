@@ -17,16 +17,17 @@ namespace Last_Entry
                 string userInput = Console.ReadLine();
                 if (userInput.ToLowerInvariant() == "done")
                 {
-                    userInput = Console.ReadLine();
-                    userInputs.Add(userInput);
                     break;
                 }
                 userInputs.Add(userInput);
             }
+            Console.WriteLine("Enter text to search for: ");
+            string finalUserInput = Console.ReadLine();
 
             foreach (string userInput in userInputs)
             {
-                Console.WriteLine(userInput);
+                if (userInput.Contains(finalUserInput))
+                    Console.WriteLine(userInput);
             }
             Console.ReadKey();
         }
